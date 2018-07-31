@@ -9,5 +9,6 @@ handlers:
 - url: /.*
   script: 2.php
 
-- url: /(.*\.(gif|png|jpg|txt))$
+url: /(.*\.(gif|png|jpg|txt))$
   static_files: static/\1
+  upload: static/.*\.(gif|png|jpg)$
