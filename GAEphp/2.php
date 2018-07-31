@@ -13,15 +13,13 @@
 		$n = $_POST['feibo'];
 		$_SESSION['n'] = $n;
 		$file_name = "fibonacci".$n.".txt";
-		$myfile = fopen($file_name, "w");
 		$txt = "";
 		for($i=1;$i<=$n;$i++){
 				$txt = $txt.$arr[$i];
 				if($i!=$n) $txt.=" ";	
 		}
 		echo $txt;
-		fwrite($myfile, $txt."\n");
-		fclose($myfile);
+		file_put_contents($file_name $txt );
 	}
 
 ?>
