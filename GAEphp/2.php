@@ -19,7 +19,7 @@
 				if($i!=$n) $txt.=" ";	
 		}
 		echo $txt;
-		file_put_contents($file_name $txt );
+		file_put_contents($file_name,$txt);
 	}
 
 ?>
