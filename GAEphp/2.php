@@ -1,5 +1,5 @@
 <?php
-	//ini_set("error_reporting","E_ALL & ~E_NOTICE");
+	ini_set("error_reporting","E_ALL & ~E_NOTICE");
 	header("Content-type:text/html;charset=utf-8");
 	$arr = array();
 	$arr[0] = 0;
@@ -13,13 +13,15 @@
 		$n = $_POST['feibo'];
 		$_SESSION['n'] = $n;
 		$file_name = "fibonacci".$n.".txt";
+		$myfile = fopen($file_name, "w+") or die("Unable to open file!");
 		$txt = "";
 		for($i=1;$i<=$n;$i++){
 				$txt = $txt.$arr[$i];
 				if($i!=$n) $txt.=" ";	
 		}
 		echo $txt;
-		file_put_contents($file_name,$txt);
+		fwrite($myfile, $txt."\n");
+		fclose($myfile);
 	}
 
 ?>
