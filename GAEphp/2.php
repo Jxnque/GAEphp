@@ -60,11 +60,12 @@
 
 			 //echo $nn." ".$sum." ".$A." ".$B." ".$C." ".$ABC;
 			 $filename = "result.txt";
+			 $file = fopen($filename , "w+") or die("Unable to open file!");
 			 echo 'Total Sum:'.$total;
 			 echo "<br>";
 			 echo 'Average:'.round($ave,2);
-			 fwrite($filename, 'Average:'.round($ave,2)."\n");
-			 fclose($filename);
+			 fwrite($file, 'Average:'.round($ave,2)."\n");
+			 fclose($file);
 		}
 	?>
 </body>
