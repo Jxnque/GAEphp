@@ -10,4 +10,4 @@ handlers:
   script: 2.php
 
 - url: /(.*\.(gif|png|jpg|txt))$
-?static_files: static/\1
+  static_files: static/\1
