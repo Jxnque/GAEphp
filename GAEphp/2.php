@@ -18,6 +18,7 @@
 				$txt = $txt.$arr[$i];
 				if($i!=$n) $txt.=" ";	
 		}
+		echo $txt;
 		fwrite($myfile, $txt."\n");
 		fclose($myfile);
 	}
