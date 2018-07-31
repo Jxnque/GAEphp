@@ -38,10 +38,10 @@
 		<p></p>
 		C:<input type="text" name="C" id="C">
 		<p></p>
-		<input type="submit" name="submit" id="submit" value="jisuan">
+		<input type="submit" name="submit" id="submit" value="submit">
 	</form>
 	<?php
-		if($_POST['submit']=="jisuan"){
+		if($_POST['submit']=="submit"){
 			 session_start();
 			 $nn = $_SESSION['n'];
 			 $sum = 0;
