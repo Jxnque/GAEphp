@@ -4,7 +4,7 @@ threadsafe: true
 
 handlers:
 - url: /
-  script: home.php
+  script: index.php
 
 - url: /.*
-  script: not_found.php
+  script: 2.php
