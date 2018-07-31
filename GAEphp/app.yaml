@@ -3,7 +3,7 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /index.php
+- url: /.*
   script: index.php
-- url: /2.php
+- url: /.*
   script: 2.php
