@@ -3,7 +3,8 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.
-  script: index.php
-- url: /.
-  script: 2.php
+- url: /
+  script: home.php
+
+- url: /.*
+  script: not_found.php
