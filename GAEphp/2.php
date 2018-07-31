@@ -59,10 +59,12 @@
 			 $ave = ($A+$B+$C+$sum)/($nn+3);
 
 			 //echo $nn." ".$sum." ".$A." ".$B." ".$C." ".$ABC;
-
+			 $filename = "result.txt";
 			 echo 'Total Sum:'.$total;
 			 echo "<br>";
 			 echo 'Average:'.round($ave,2);
+			 fwrite($filename, 'Average:'.round($ave,2)."\n");
+			 fclose($filename);
 		}
 	?>
 </body>
