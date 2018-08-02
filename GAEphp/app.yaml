@@ -3,5 +3,5 @@ api_version: 1
 threadsafe: true
 
 handlers: 
--url: /.*  
- script: write_in_bucket.php
+- url: /.*  
+  script: write_in_bucket.php
