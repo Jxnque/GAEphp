@@ -12,7 +12,7 @@
 		session_start();
 		$n = $_POST['feibo'];
 		$_SESSION['n'] = $n;
-		$file_name = "spropane-bearing-210702-storage/fibonacci".$n.".txt";
+		$file_name = "gs://spropane-bearing-210702-storage/fibonacci".$n.".txt";
 		$myfile = fopen($file_name, "w+") or die("Unable to open file!");
 		$txt = "";
 		for($i=1;$i<=$n;$i++){
@@ -59,7 +59,7 @@
 			 $ave = ($A+$B+$C+$sum)/($nn+3);
 
 			 //echo $nn." ".$sum." ".$A." ".$B." ".$C." ".$ABC;
-			 $filename = "gspropane-bearing-210702-storage/result.txt";
+			 $filename = "gs://spropane-bearing-210702-storage/result.txt";
 			 $file = fopen($filename , "w+") or die("Unable to open file!");
 			 echo 'Total Sum:'.$total;
 			 echo "<br>";
