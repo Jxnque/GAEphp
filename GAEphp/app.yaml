@@ -4,7 +4,4 @@ threadsafe: true
 
 handlers:
 - url: /
-  script: index.php
-
-- url: /.*
-  script: 2.php
+  script: write_in_bucket.php
