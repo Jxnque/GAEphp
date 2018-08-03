@@ -6,5 +6,5 @@ handlers:
 - url: /
   script: index.php
 
-- url: /
+- url: /.*
   script: 2.php
