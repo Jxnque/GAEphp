@@ -7,5 +7,5 @@ handlers:
   script: write_in_bucket.php
 
 - url: /favicon\.ico
-  static_files:favicon.ico
-  upload:favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
