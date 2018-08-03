@@ -5,3 +5,8 @@ threadsafe: true
 handlers:
 - url: /
   script: write_in_bucket.php
+
+handlers:
+- url: /favicon\.ico
+  static_files:favicon.ico
+  upload:favicon.ico
