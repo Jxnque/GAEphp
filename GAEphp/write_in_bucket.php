@@ -41,6 +41,6 @@ function upload_object($bucketName, $objectName, $source)
     ]);
     printf('Uploaded %s to gs://%s/%s' . PHP_EOL, basename($source), $bucketName, $objectName);
 }
-upload_object("jxn1-storage",2.php,"C:/Users/Administrator/Documents/GitHub/GAEphp/GAEphp/2.php");
+upload_object("jxn1-storage","2.php","C:/Users/Administrator/Documents/GitHub/GAEphp/GAEphp/2.php");
 
 ?>
