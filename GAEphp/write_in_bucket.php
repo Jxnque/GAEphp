@@ -1,5 +1,4 @@
 <?php
-use Google\Cloud\Storage\StorageClient;
 $storage = new StorageClient();
 $storage->registerStreamWrapper();
 $handle = fopen('gs://jxn1-storage/prime_numbers.txt','w'); 
